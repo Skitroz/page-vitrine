@@ -5,36 +5,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fichier css relié au code HTML -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- Police Oswald  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <!-- Titre du site -->
     <title>Louis Vuitton</title>
 </head>
 
 <body>
 
-    <nav class="navbar">
-        <img src="img/Louis Vuitton logo.png" alt="Logo Louis Vuitton" id="logo">
-        <div class="navlinks">
-            <ul>
-                <li id="Accueil"><a href="#">Accueil</a></li>
-                <li><a href="#">Produit</a></li>
-                <li><a href="#">A propos</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </div>
-        <img src="img/menu-removebg-preview.png" alt="Menu bouton" class="menu-bouton">
-    </nav>
+    <!-- En tête -->
+    <header>
+        <!-- Navigation -->
+        <nav class="navbar">
+            <!-- Logo du site -->
+            <img src="img/Louis Vuitton logo.png" alt="Logo Louis Vuitton" id="logo">
+            <!-- Liens de redirection -->
+            <div class="navlinks">
+                <ul>
+                    <li id="Accueil"><a href="#">Accueil</a></li>
+                    <li><a href="#">Produit</a></li>
+                    <li><a href="#">A propos</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <!-- Icône du bouton pour version mobile (responsive) -->
+            <img src="img/menu-removebg-preview.png" alt="Menu bouton" id="menu-bouton">
+        </nav>
+    </header>
 
-    <header></header>
+    <!-- Début de la page vitrine -->
+    <main>
+
+    </main>
+
 </body>
+
+
+
+<!-- Script pour le côté responsive de la navigation -->
 <script>
-    const menuHamburger = document.querySelector(".menu-bouton")
+    const menuHamburger = document.querySelector("#menu-bouton")
     const navLinks = document.querySelector(".navlinks")
 
-    menuHamburger.addEventListener('click',()=>{
-    navLinks.classList.toggle('mobile-menu')
+    menuHamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('mobile-menu')
     })
 </script>
+
 </html>
