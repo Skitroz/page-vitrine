@@ -11,7 +11,7 @@
 header {
     height: 100vh;
     width: 100vw;
-    background-image: url(img/bg-bg.jpg);
+    background-image: url(img/oleg-laptev-7jQh3EiS8Bs-unsplash.jpg);
     background-size: cover;
 }
 
@@ -26,12 +26,6 @@ header {
     align-items: center;
 }
 
-/* Logo sur la barre de navigation */
-#logo {
-    width: 8%;
-    height: 8%;
-}
-
 /* Liens */
 .navlinks ul {
     display: flex;
@@ -41,13 +35,20 @@ header {
     color: rgb(90, 89, 89);
 }
 
-.navlinks ul li {
+.navbar a:hover,
+#Accueil a:hover {
+    color: rgb(49, 29, 29);
+    font-weight: 700;
+}
+
+.navlinks ul li,
+#logo {
     margin: 0 20px;
 }
 
 #Accueil a {
-    color: aliceblue;
-    font-weight: bold;
+    color: black;
+    font-weight: 400;
 }
 
 /* Bouton de la barre de navigation pour les appreils mobiles */
@@ -59,10 +60,118 @@ header {
     right: 40px;
 }
 
+#titre {
+    position: absolute;
+    top: 400%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-weight: bold;
+    font-size: 3em;
+}
+
+.boutons {
+    position: absolute;
+    /* postulat de départ */
+    top: 650%;
+    left: 50%;
+    /* à 50%/50% du parent référent */
+    transform: translate(-50%, -50%);
+    /* décalage de 50% de sa propre taille */
+    display: flex;
+    justify-content: space-between;
+}
+
+#sac,
+#autre {
+    background-color: #e1e2e4;
+    border-radius: 10px;
+    border: 4px double rgb(90, 89, 89);
+    font-size: 15px;
+    padding: 20px;
+    cursor: pointer;
+}
+
+#sac,
+#autre,
+a {
+    color: rgb(90, 89, 89);
+}
+
+#sac,
+#autre,
+a:hover {
+    color: rgb(49, 29, 29);
+}
+
+#autre {
+    margin-left: 150px;
+}
+
+button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+button span:after {
+    content: "\00bb";
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+button:hover span {
+    padding-right: 25px;
+}
+
+button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+main{
+    background-color: rgb(232, 232, 232);
+    border-top: 4px double rgb(90, 89, 89);
+    border-bottom: 4px double rgb(90, 89, 89);
+}
+
+.s_1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ss_1{
+    margin-top: 10px;
+}
+
+.figc_1, .figc_2{
+    margin-top: 10px;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.s_2{
+    margin-top: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.t_main{
+    text-align: center;
+    margin-top: 90px;
+}
+
 /* Reponsive pour mobile */
 @media screen and (max-width: 500px) {
 
-    .navbar{
+    .navbar {
         padding: 0;
     }
 
@@ -70,13 +179,14 @@ header {
         display: block;
     }
 
-    #logo{
+    #logo {
         width: 100px;
+        font-weight: bold;
         margin-top: 30px;
         margin-left: 30px;
     }
 
-    .navlinks { 
+    .navlinks {
         top: 0;
         left: 0;
         position: absolute;
@@ -91,7 +201,7 @@ header {
         transition: all 0.5s ease;
     }
 
-    .navlinks.mobile-menu{
+    .navlinks.mobile-menu {
         margin-left: 0;
     }
 
@@ -105,5 +215,25 @@ header {
         margin: 20px 0;
         font-size: 1.3em;
     }
-    
+
+    .boutons {
+        top: 500%;
+    }
+
+    #sac,
+    #autre {
+        font-size: 20px;
+        margin: 50px;
+    }
+
+    #sac,
+    #autre span {
+        text-align: center;
+    }
+
+    #titre {
+        font-size: 150%;
+        top: 350%;
+    }
+
 }

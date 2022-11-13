@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Page vitrine Louis Vuitton pour un projet de 1ère année à la NormandieWebSchool">
+    <!-- Icône du site -->
+    <link rel="icon" type="image/png" href="img/Louis Vuitton logo.png" />
     <!-- Fichier css relié au code HTML -->
     <link rel="stylesheet" href="css/style.css">
     <!-- Police Oswald  -->
@@ -12,7 +15,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
     <!-- Titre du site -->
-    <title>Louis Vuitton</title>
+    <title>Louis Vuitton | Accueil</title>
 </head>
 
 <body>
@@ -22,23 +25,64 @@
         <!-- Navigation -->
         <nav class="navbar">
             <!-- Logo du site -->
-            <img src="img/Louis Vuitton logo.png" alt="Logo Louis Vuitton" id="logo">
+            <a href="index.html">
+                <!-- Titre de la navigation -->
+                <h1 id="logo">LOUIS VUITTON</h1>
+            </a>
+            <!-- Titre 2 -->
+            <h2 id="titre">BIENVENUE DANS LE MONDE<br> DE LOUIS VUITTON!</h2>
+
+            <!-- Boutons -->
+            <div class="boutons">
+                <a href="#nos_sacs"><button id="sac"><span>Nos sacs</span></button></a>
+                <a href="#autres_produits"><button id="autre"><span>Autres produits</span></button></a>
+            </div>
+
             <!-- Liens de redirection -->
             <div class="navlinks">
                 <ul>
-                    <li id="Accueil"><a href="#">Accueil</a></li>
-                    <li><a href="#">Produit</a></li>
-                    <li><a href="#">A propos</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li id="Accueil"><a href="index.html">Accueil</a></li>
+                    <li><a href="#Nos_Produits">Nos produits</a></li>
+                    <li><a href="#">À propos</a></li>
+                    <li><a href="#">Contacts</a></li>
                 </ul>
             </div>
             <!-- Icône du bouton pour version mobile (responsive) -->
             <img src="img/menu-removebg-preview.png" alt="Menu bouton" id="menu-bouton">
         </nav>
+
     </header>
 
     <!-- Début de la page vitrine -->
-    <main>
+    <main id="Nos_Produits">
+
+        <section class="s_1" id="nos_sacs">
+            <figure class="ss_1">
+                <img src="img/sac_a_dos_louis_vuitton_r.png" alt="Sac à dos Louis Vuitton pour enfants">
+                <figcaption class="figc_1">Des sacs à dos LV...</figcaption>
+            </figure>
+            <figure class="ss_1">
+                <img src="img/sac_à_main_louis_vuitton_r.jpg" alt="Sac à main Louis Vuitton pour femme">
+                <figcaption class="figc_1">...Mais aussi des sac à main LV pour femme.</figcaption>
+            </figure>
+            <figure class="ss_1">
+                <img src="img/sacoche_louis_vuitton_r.jpg" alt="Sacoche Louis Vuitton pour homme">
+                <figcaption class="figc_1">Ainsi pour vous messieurs des sacoches.</figcaption>
+            </figure>
+        </section>
+
+        <h1 class="t_main" id="autres_produits">D'autres produtuis existent dans votre maison!</h3>
+
+        <section class="s_2">
+            <figure class="ss_2">
+            <img src="img/peignoir_louis_vuitton_r.webp" alt="Peignoir Louis Vuitton">
+            <figcaption class="figc_2">Aussi bien des peignoirs...</figcaption>
+            </figure>    
+            <figure class="ss_2">
+                <img src="img/chaussure_louis_vuitton_r.webp" alt="Chaussure Louis Vuitton">
+                <figcaption class="figc_2">...Que des chaussures Louis Vuitton !</figcaption>
+            </figure>
+        </section>
 
     </main>
 
