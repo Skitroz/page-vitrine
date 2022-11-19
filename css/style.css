@@ -1,29 +1,31 @@
 /* Séléction de toute la page */
 * {
-    margin: 0;
-    padding: 0;
     list-style: none;
     text-decoration: none;
     font-family: 'Poiret One', cursive;
+    margin: 0;
+    padding: 0;
 }
 
 /* En tête du site */
 header {
     height: 100vh;
-    width: 100vw;
+    width: auto;
     background-image: url(img/oleg-laptev-7jQh3EiS8Bs-unsplash.jpg);
     background-size: cover;
 }
 
 /* Barre de navigation */
+
 .navbar {
-    position: absolute;
     padding: 20px;
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    width: auto;
     box-sizing: border-box;
     align-items: center;
+    position: sticky;
+    top: 0;
 }
 
 /* Liens */
@@ -51,39 +53,22 @@ header {
     font-weight: 400;
 }
 
-/* Bouton de la barre de navigation pour les appreils mobiles */
-#menu-bouton {
-    display: none;
-    width: 55px;
-    position: absolute;
-    top: 40px;
-    right: 40px;
-}
+
 
 #titre {
-    position: absolute;
-    top: 400%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin-top: 100px;
     text-align: center;
     font-weight: bold;
     font-size: 3em;
 }
 
 .boutons {
-    position: absolute;
-    /* postulat de départ */
-    top: 650%;
-    left: 50%;
-    /* à 50%/50% du parent référent */
-    transform: translate(-50%, -50%);
-    /* décalage de 50% de sa propre taille */
-    display: flex;
-    justify-content: space-between;
+    display: block;
+    text-align: center;
+    margin-top: 100px;
 }
 
-#sac,
-#autre {
+.btn_nav {
     background-color: #e1e2e4;
     border-radius: 10px;
     border: 4px double rgb(90, 89, 89);
@@ -92,132 +77,142 @@ header {
     cursor: pointer;
 }
 
-#sac,
-#autre,
-a {
+.btn_nav a {
     color: rgb(90, 89, 89);
 }
 
-#sac,
-#autre,
-a:hover {
+.btn_nav a:hover {
     color: rgb(49, 29, 29);
 }
 
-#autre {
-    margin-left: 150px;
+.btn_nav {
+    margin: 100px;
 }
 
-button span {
+.btn_nav span {
     cursor: pointer;
     display: inline-block;
     position: relative;
     transition: 0.5s;
 }
 
-button span:after {
-    content: "\00bb";
-    position: absolute;
+.btn_nav span:after {
+    content: "  \00bb";
     opacity: 0;
-    top: 0;
-    right: -20px;
+    margin-right: 0px;
     transition: 0.5s;
 }
 
-button:hover span {
-    padding-right: 25px;
+.btn_nav:hover span {
+    padding-right: 5px;
 }
 
-button:hover span:after {
+.btn_nav:hover span:after {
     opacity: 1;
     right: 0;
 }
 
-main{
+main {
     background-color: rgb(232, 232, 232);
     border-top: 4px double rgb(90, 89, 89);
     border-bottom: 4px double rgb(90, 89, 89);
 }
 
-.s_1{
+#femme_lv,
+#homme_lv {
+    width: 50%;
+    height: auto;
+}
+
+#titre_main {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.ss {
+    font-weight: bold;
+    font-size: 1.3em;
+    margin-top: 10px;
+}
+
+.style,
+#homme,
+#femme {
     display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+
+.img_ {
+    width: 70%;
+}
+
+#vitrine {
+    margin-top: 50px;
+    border-top: 4px double rgb(90, 89, 89);
+    text-align: center;
+}
+
+#vitrine h1 {
+    margin-bottom: 40px;
+}
+
+#homme {
+    border-bottom: 4px double rgb(90, 89, 89);
+}
+
+.st {
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+main a {
+    color: rgb(87, 76, 76);
+}
+
+main a:hover {
+    color: rgb(49, 29, 29);
+}
+
+footer {
+    background: #19110b;
+}
+
+#logo_footer {
+    color: whitesmoke;
+    margin-left: 150px;
+    border-bottom: 1px solid #392d23;
+    display: inline-block;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.nav_footer_list {
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 }
-
-.ss_1{
-    margin-top: 10px;
+.nav_footer_list li a{
+    color: whitesmoke;
+    margin: 40px;
 }
 
-.figc_1, .figc_2{
-    margin-top: 10px;
-    font-size: 1.2em;
-    margin-bottom: 10px;
-    text-align: center;
+.nav_footer_list li{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
-
-.s_2{
-    margin-top: 65px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.t_main{
-    text-align: center;
-    margin-top: 90px;
-}
-
 /* Reponsive pour mobile */
 @media screen and (max-width: 500px) {
-
-    .navbar {
-        padding: 0;
-    }
-
-    #menu-bouton {
-        display: block;
-    }
 
     #logo {
         width: 100px;
         font-weight: bold;
         margin-top: 30px;
         margin-left: 30px;
-    }
-
-    .navlinks {
-        top: 0;
-        left: 0;
-        position: absolute;
-        background-color: rgb(255, 255, 255, 0.20);
-        backdrop-filter: blur(10px);
-        width: 100%;
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-left: -100%;
-        transition: all 0.5s ease;
-    }
-
-    .navlinks.mobile-menu {
-        margin-left: 0;
-    }
-
-    .navlinks ul {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .navlinks ul li {
-        margin: 20px 0;
-        font-size: 1.3em;
-    }
-
-    .boutons {
-        top: 500%;
     }
 
     #sac,
