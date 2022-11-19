@@ -208,6 +208,10 @@ footer h1{
     font-family: 'Source Sans Pro', sans-serif;
 }
 
+.link:hover{
+    color: rgb(131, 121, 121);
+}
+
 .nav_footer_list li{
     padding-top: 2rem;
     padding-bottom: 2rem;
