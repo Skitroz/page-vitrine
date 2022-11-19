@@ -156,6 +156,7 @@ main {
 
 #vitrine h1 {
     margin-bottom: 40px;
+    margin-top: 40px;
 }
 
 #homme {
@@ -177,17 +178,21 @@ main a:hover {
     color: rgb(49, 29, 29);
 }
 
-footer {
+#footer {
     background: #19110b;
 }
 
-#logo_footer {
+footer h3{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.footer_titre {
     color: whitesmoke;
-    margin-left: 150px;
     border-bottom: 1px solid #392d23;
+    margin-left: 150px;
     display: inline-block;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
 }
 
 .nav_footer_list {
@@ -196,15 +201,24 @@ footer {
     align-items: center;
     justify-content: space-between;
 }
-.nav_footer_list li a{
+.link{
     color: whitesmoke;
-    margin: 40px;
+    margin: 30px;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 .nav_footer_list li{
     padding-top: 2rem;
     padding-bottom: 2rem;
+    border-bottom: 1px solid #392d23;
 }
+
+.nav_footer_list_rs{
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+}
+
 /* Reponsive pour mobile */
 @media screen and (max-width: 500px) {
 
