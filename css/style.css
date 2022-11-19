@@ -182,8 +182,9 @@ main a:hover {
     background: #19110b;
 }
 
-footer h3{
+footer h1{
     font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.3em;
 }
 
 .footer_titre {
