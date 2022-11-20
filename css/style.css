@@ -24,8 +24,6 @@ header {
     width: auto;
     box-sizing: border-box;
     align-items: center;
-    position: sticky;
-    top: 0;
 }
 
 /* Liens */
@@ -182,13 +180,10 @@ main a:hover {
     background: #19110b;
 }
 
-footer h1{
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 1.3em;
-}
-
 .footer_titre {
     color: whitesmoke;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.3em;
     border-bottom: 1px solid #392d23;
     margin-left: 150px;
     display: inline-block;
@@ -202,36 +197,40 @@ footer h1{
     align-items: center;
     justify-content: space-between;
 }
-.link{
+
+.link {
     color: whitesmoke;
     margin: 30px;
     font-family: 'Source Sans Pro', sans-serif;
 }
 
-.link:hover{
+.link:hover {
     color: rgb(131, 121, 121);
 }
 
-.nav_footer_list li{
+.nav_footer_list li {
     padding-top: 2rem;
     padding-bottom: 2rem;
     border-bottom: 1px solid #392d23;
 }
 
-.nav_footer_list_rs{
+.nav_footer_list_rs {
     display: flex;
     justify-content: space-around;
     padding: 30px;
 }
 
 /* Reponsive pour mobile */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
 
     #logo {
-        width: 100px;
+        font-size: 15px;
         font-weight: bold;
-        margin-top: 30px;
-        margin-left: 30px;
+        margin-left: -5px;
+    }
+
+    .navlinks {
+        font-size: 15px;
     }
 
     #sac,
@@ -250,4 +249,54 @@ footer h1{
         top: 350%;
     }
 
+    #txt {
+        margin-right: -10px;
+    }
+
+    #titre_main,
+    #vitrine h1 {
+        font-size: 1.5em;
+        margin-bottom: 50px;
+    }
+
+    .ss,
+    .st {
+        font-size: 1em;
+    }
+
+    .img_{
+        width: 50%;
+        height: auto;
+    }
+
+    .nav_footer_list_rs{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .footer_titre{
+        display: flex;
+        margin-left: 110px;
+        border-bottom: unset;
+    }
+
+    .nav_footer_list li{
+        border: unset;
+        font-size: 0.8em;
+
+    }
+
+    .nav_footer_list a{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    #border{
+        margin-bottom: 10px;
+        border: 1px solid #392d23;
+    }
 }
+
