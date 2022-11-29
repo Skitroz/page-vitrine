@@ -7,14 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Page vitrine Louis Vuitton pour un projet de 1ère année à la NormandieWebSchool">
     <!-- Icône du site -->
-    <link rel="icon" type="image/png" href="img/Louis Vuitton logo.png" />
+    <link rel="icon" type="image/png" href="img/Louis_Vuitton_logo.png">
     <!-- Fichier css relié au code HTML -->
     <link rel="stylesheet" href="css/style.css">
     <!-- Police Oswald  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
     <!-- Titre du site -->
     <title>Louis Vuitton | Accueil</title>
 </head>
@@ -44,7 +44,7 @@
 
         <!-- Boutons -->
         <div class="boutons">
-            <a href="#ns_m_v"><button class="btn_nav"><span id="txt">Articles préférés</span></button></a>
+            <a href="#ns_m_v" class="btn_nav"><span id="txt">Articles préférés</span></a>
         </div>
     </header>
 
@@ -54,16 +54,12 @@
         <h1 id="titre_main">Qui êtes-vous ?</h1>
         <section class="style">
             <figure>
-                <a href="#femme">
-                    <img src="img/femme_louis_vuitton.webp" alt="Femme portant du Louis Vuitton" id="femme_lv">
-                    <figcaption class="ss">FEMMES</figcaption>
-                </a>
+                <img src="img/femme_louis_vuitton.webp" alt="Femme portant du Louis Vuitton" id="femme_lv">
+                <figcaption class="ss"><a href="#femme">FEMMES</a></figcaption>
             </figure>
             <figure>
-                <a href="#homme">
-                    <img src="img/louis_vuitton_homme.webp" alt="Homme portant du Louis Vuitton" id="homme_lv">
-                    <figcaption class="ss">HOMMES</figcaption>
-                </a>
+                <img src="img/louis_vuitton_homme.webp" alt="Homme portant du Louis Vuitton" id="homme_lv">
+                <figcaption class="ss"><a href="#homme">HOMMES</a></figcaption>
             </figure>
         </section>
 
@@ -71,54 +67,76 @@
 
         <div id="vitrine">
             <h1>Nos meilleures ventes chez les hommes</h1>
-        <section id="homme">
-            <figure class="ss_homme">
-                <img src="img/Louis-Vuitton-chaussures_homme.webp" alt="Chaussures Homme Louis Vuitton" class="img_">
-                <figcaption class="st"><a href="https://fr.louisvuitton.com/fra-fr/produits/sneaker-lv-trainer-nvprod3130269v/1A9G51" target="_blank" title="intéressé par le produit ? Cliquez-ici pour l'acheter !">Sneaker LV Trainer 980,00€</a></figcaption>
-            </figure>
-            <figure class="ss_homme">
-                <img src="img/Louis-Vuitton-portefeuilles_homme.webp" alt="Porte-Feuilles homme Louis Vuitton" class="img_">
-                <figcaption class="st"><a href="https://fr.louisvuitton.com/fra-fr/produits/organizer-de-poche-nvprod4020063v/M81757" target="_blank" title="intéressé par le produit ? Cliquez-ici pour l'acheter !">Organizer de poche 365,00€</a></figcaption>
-            </figure>
-            <figure class="ss_homme">
-                <img src="img/Louis-Vuitton-bonnet-homme.webp" alt="Bonnet homme Louis Vuitton" class="img_">
-                <figcaption class="st"><a href="https://fr.louisvuitton.com/fra-fr/produits/bonnet-lv-ahead-s00-nvprod3920103v/M78118" target="_blank" title="intéressé par le produit ? Cliquez-ici pour l'acheter !">Bonnet LV Ahead 390,00€</a></figcaption>
-            </figure>
-        </section>
+            <section id="homme">
+                <figure class="ss_homme">
+                    <img src="img/Louis-Vuitton-chaussures_homme.webp" alt="Chaussures Homme Louis Vuitton"
+                        class="img_">
+                    <figcaption class="st"><a
+                            href="https://fr.louisvuitton.com/fra-fr/produits/sneaker-lv-trainer-nvprod3130269v/1A9G51"
+                            target="_blank" title="intéressé par le produit ? Cliquez-ici pour l'acheter !">Sneaker LV
+                            Trainer 980,00€</a></figcaption>
+                </figure>
+                <figure class="ss_homme">
+                    <img src="img/Louis-Vuitton-portefeuilles_homme.webp" alt="Porte-Feuilles homme Louis Vuitton"
+                        class="img_">
+                    <figcaption class="st"><a
+                            href="https://fr.louisvuitton.com/fra-fr/produits/organizer-de-poche-nvprod4020063v/M81757"
+                            target="_blank" title="intéressé par le produit ? Cliquez-ici pour l'acheter !">Organizer de
+                            poche 365,00€</a></figcaption>
+                </figure>
+                <figure class="ss_homme">
+                    <img src="img/Louis-Vuitton-bonnet-homme.webp" alt="Bonnet homme Louis Vuitton" class="img_">
+                    <figcaption class="st"><a
+                            href="https://fr.louisvuitton.com/fra-fr/produits/bonnet-lv-ahead-s00-nvprod3920103v/M78118"
+                            target="_blank" title="intéressé par le produit ? Cliquez-ici pour l'acheter !">Bonnet LV
+                            Ahead 390,00€</a></figcaption>
+                </figure>
+            </section>
 
-        <!-- Section Femme -->
+            <!-- Section Femme -->
 
-        <h1>Nos meilleures ventes chez les femmes</h1>
-        <section id="femme">
-            <figure>
-                <img src="img/Louis-Vuitton-sacamain.webp" alt="Sac à main pour Femme Louis Vuitton" class="img_">
-                <figcaption class="st"><a href="https://fr.louisvuitton.com/fra-fr/produits/sac-side-trunk-monogram-nvprod4060061v/M46358" target="_blank" title="intéressé par le produit ? Cliquez-ici pour l'acheter !"> Side Trunk 2 880,00€</a></figcaption>
-            </figure>
-            <figure>
-                <img src="img/louis_vuitton_pochette.webp" alt="Pochette pour femme Louis Vuitton" class="img_">
-                <figcaption class="st"><a href="https://fr.louisvuitton.com/fra-fr/produits/pochette-felicie-monogram-010578/M61276" target="_blank" title="intéressé par le produit ? Cliquez-ici pour l'acheter !">Pochette Félicie 1 130,00€</a></figcaption>
-            </figure>
-            <figure>
-                <img src="img/louis_vuitton_chale.webp" alt="Châle pour femme Louis Vuitton" class="img_">
-                <figcaption class="st"><a href="https://fr.louisvuitton.com/fra-fr/produits/chale-evermore-s00-nvprod3630159v/M77647" target="_blank" title="intéressé par le produit ? Cliquez-ici pour l'acheter !">Châle Evermore 400,00€</a></figcaption>
-            </figure>
-        </section>
-    </div>
+            <h1>Nos meilleures ventes chez les femmes</h1>
+            <section id="femme">
+                <figure>
+                    <img src="img/Louis-Vuitton-sacamain.webp" alt="Sac à main pour Femme Louis Vuitton" class="img_">
+                    <figcaption class="st"><a
+                            href="https://fr.louisvuitton.com/fra-fr/produits/sac-side-trunk-monogram-nvprod4060061v/M46358"
+                            target="_blank" title="intéressé par le produit ? Cliquez-ici pour l'acheter !"> Side Trunk
+                            2 880,00€</a></figcaption>
+                </figure>
+                <figure>
+                    <img src="img/louis_vuitton_pochette.webp" alt="Pochette pour femme Louis Vuitton" class="img_">
+                    <figcaption class="st"><a
+                            href="https://fr.louisvuitton.com/fra-fr/produits/pochette-felicie-monogram-010578/M61276"
+                            target="_blank" title="intéressé par le produit ? Cliquez-ici pour l'acheter !">Pochette
+                            Félicie 1 130,00€</a></figcaption>
+                </figure>
+                <figure>
+                    <img src="img/louis_vuitton_chale.webp" alt="Châle pour femme Louis Vuitton" class="img_">
+                    <figcaption class="st"><a
+                            href="https://fr.louisvuitton.com/fra-fr/produits/chale-evermore-s00-nvprod3630159v/M77647"
+                            target="_blank" title="intéressé par le produit ? Cliquez-ici pour l'acheter !">Châle
+                            Evermore 400,00€</a></figcaption>
+                </figure>
+            </section>
+        </div>
     </main>
 
     <!-- Pied de page -->
 
-    <footer id="footer"> 
-        
+    <footer id="footer">
+
         <!-- Infos/Contacts -->
 
         <h1 class="footer_titre">LOUIS VUITTON</h1>
         <div id="nav_footer">
             <ul class="nav_footer_list">
-                <li><a href="https://fr.louisvuitton.com/fra-fr/mylv/newsletter?_gl=1%2amsr0f%2a_ga%2aMTY1MzMzNzA4MS4xNjY3OTg5OTgy%2a_ga_S6ED35NYJQ%2aMTY2ODg1NTQzNS4xMS4xLjE2Njg4NTc2MTkuNjAuMC4w" target="_blank" class="link">Newsletter</a></li>
-                <li><a href="https://fr.louisvuitton.com/fra-fr/nous-contacter" target="_blank" class="link">Aide</a></li>
+                <li><a href="https://fr.louisvuitton.com/fra-fr/mylv/newsletter?_gl=1%2amsr0f%2a_ga%2aMTY1MzMzNzA4MS4xNjY3OTg5OTgy%2a_ga_S6ED35NYJQ%2aMTY2ODg1NTQzNS4xMS4xLjE2Njg4NTc2MTkuNjAuMC4w"
+                        target="_blank" class="link">Newsletter</a></li>
+                <li><a href="https://fr.louisvuitton.com/fra-fr/nous-contacter" target="_blank" class="link">Aide</a>
+                </li>
                 <li><a href="https://fr.louisvuitton.com/fra-fr/magasins" target="_blank" class="link">Magasins</a></li>
-                <li><a href="tel:+33 9 77 40 40 77" target="_blank" class="link">+33 9 77 40 40 77</a></li>
+                <li><a href="tel:+33977404077" target="_blank" class="link">+33 9 77 40 40 77</a></li>
             </ul>
         </div>
         <div id="border"></div>
@@ -132,7 +150,8 @@
                 <li><a href="https://www.instagram.com/louisvuitton/" target="_blank" class="link">Instagram</a></li>
                 <li><a href="https://www.facebook.com/LouisVuitton/" target="_blank" class="link">Facebook</a></li>
                 <li><a href="https://www.youtube.com/louisvuitton" target="_blank" class="link">YouTube</a></li>
-                <li><a href="https://fr.louisvuitton.com/fra-fr/magazine/articles/snapchat" target="_blank" class="link">Snapchat</a></li>
+                <li><a href="https://fr.louisvuitton.com/fra-fr/magazine/articles/snapchat" target="_blank"
+                        class="link">Snapchat</a></li>
                 <li><a href="https://www.pinterest.fr/LouisVuitton/" target="_blank" class="link">Pinterest</a></li>
                 <li><a href="https://fr.foursquare.com/louisvuitton" target="_blank" class="link">FourSquare</a></li>
             </ul>
